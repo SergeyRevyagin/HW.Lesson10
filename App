@@ -1,0 +1,30 @@
+	public static void main(String[] args) {
+		ArrayList<String> myList = new ArrayList<>();
+		myList.add("Александр");
+		myList.add("Саня");
+		myList.add("Шурик");
+		myList.add("Сергей");
+	    myList.add("Санчо");
+		myList.add("Саныч");
+		myList.add("Шура");
+		myList.add("Санчо");
+		myList.add("Сергей");
+		myList.add("Серый");
+		myList.add("Сережа");
+		myList.add("Сергей");
+		myList.add("Сержио");
+		myList.add("Сержант");
+		myList.add("Сергей");
+		System.out.println("Изначальный список имен : " +myList);
+		
+		Set<String> uniqueWords =new HashSet<>(myList) ;
+		System.out.println("Список уникальных слов: "+uniqueWords.toString());
+		
+		System.out.println("Сколько раз повторяется слово");
+		for (String key: uniqueWords ) {
+		    System.out.println(key + " - " + Collections.frequency(myList, key));
+		}
+		
+	
+	}
+}
