@@ -1,14 +1,14 @@
-public class PhoneBook {
-    private HashMap<String, Set<String>> phoneBook = new HashMap<>();
+public class Phonebook {
+    private HashMap<String, Set<String>> phonebook = new HashMap<>();
 
     public void add(String name, String phone) {
-        Set<String> number = phoneBook.getOrDefault(name, new HashSet<>());
+        Set<String> number = phonebook.getOrDefault(name, new HashSet<>());
         number.add(phone);
-        phoneBook.put(name, number);
+        phonebook.put(name, number);
 
     }
 
     public Set<String> get(String name) {
-        return phoneBook.get(name);
+        return phonebook.get(name);
     }
 }
