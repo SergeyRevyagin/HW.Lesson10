@@ -4,7 +4,7 @@
 		myList.add("Саня");
 		myList.add("Шурик");
 		myList.add("Сергей");
-	    myList.add("Санчо");
+	        myList.add("Санчо");
 		myList.add("Саныч");
 		myList.add("Шура");
 		myList.add("Санчо");
@@ -24,6 +24,25 @@
 		for (String key: uniqueWords ) {
 		    System.out.println(key + " - " + Collections.frequency(myList, key));
 		}
+		
+		
+		phonebook phonebook = new Phonebook() ;
+		phonebook.add("Иванов","880000");
+		phonebook.add("Петров","890000");
+		phonebook.add("Сидоров","810000");
+		phonebook.add("Пушкин","820000");
+		phonebook.add("Фет","830000");
+		phonebook.add("Блок","840000");
+		phonebook.add("Иванов","850000");
+		phonebook.add("Толстой","860000");
+		phonebook.add("Есенин","870000");
+		phonebook.add("Иванов","980000");
+		phonebook.add("Грибоедов","990000");
+		phonebook.add("Тютчев","110000");
+		phonebook.add("Ахматова","220000");
+		
+		System.out.println("Иванов : " + phonebook.get("Иванов"));
+		System.out.println(phoneBook.toString());
 		
 	
 	}
